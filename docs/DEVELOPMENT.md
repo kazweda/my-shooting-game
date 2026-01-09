@@ -75,7 +75,7 @@ gh api repos/<OWNER>/<REPO>/pulls/<PR_NUMBER>/comments --paginate \
 
 このリポジトリの例:
 ```bash
-gh api repos/kazweda/flutter-web-sandbox/pulls/<PR_NUMBER>/comments --paginate \
+gh api repos/kazweda/my-shooting-game/pulls/<PR_NUMBER>/comments --paginate \
 	| jq '.[] | {user: .user.login, path, line, body}'
 ```
 

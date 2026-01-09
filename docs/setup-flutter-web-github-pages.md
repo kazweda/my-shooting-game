@@ -9,8 +9,8 @@
 
 ## TL;DR（結論）
 
-- リポジトリ名: `flutter-web-sandbox`
-- Dart package 名: `flutter_web_sandbox`
+- リポジトリ名: `my-shooting-game`
+- Dart package 名: `my_shooting_game`
 - デプロイ方式: GitHub Actions → `gh-pages` ブランチ
 - GitHub Pages 設定: **Deploy from a branch**
 - `--base-href` は必須（repo 名と一致させる）
@@ -21,7 +21,7 @@
 
 ### リポジトリ名
 ```text
-flutter-web-sandbox
+my-shooting-game
 ```
 
 - GitHub Pages の URL に使われる
@@ -29,7 +29,7 @@ flutter-web-sandbox
 
 ### Dart / Flutter のパッケージ名
 ```text
-flutter_web_sandbox
+my_shooting_game
 ```
 
 - Dart は **ハイフン不可**
@@ -44,10 +44,10 @@ flutter_web_sandbox
 
 ```bash
 flutter create \
-  --project-name flutter_web_sandbox \
-  flutter-web-sandbox
+  --project-name my_shooting_game \
+  my-shooting-game
 
-cd flutter-web-sandbox
+cd my-shooting-game
 ```
 
 ---
@@ -57,7 +57,7 @@ cd flutter-web-sandbox
 ```bash
 git init
 git branch -M main
-git remote add origin git@github.com:ユーザー名/flutter-web-sandbox.git
+git remote add origin git@github.com:ユーザー名/my-shooting-game.git
 git add .
 git commit -m "Initial Flutter project"
 git push -u origin main
@@ -121,7 +121,7 @@ jobs:
 
       - run: flutter pub get
 
-      - run: flutter build web --release --base-href /flutter-web-sandbox/
+      - run: flutter build web --release --base-href /my-shooting-game/
 
       - run: cp build/web/index.html build/web/404.html
 
@@ -165,7 +165,7 @@ Folder: / (root)
 ## 7. 公開 URL
 
 ```text
-https://ユーザー名.github.io/flutter-web-sandbox/
+https://ユーザー名.github.io/my-shooting-game/
 ```
 
 ---

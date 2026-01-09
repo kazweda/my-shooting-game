@@ -1,6 +1,6 @@
 {
-    "name": "flutter_web_sandbox",
-    "short_name": "flutter_web_sandbox",
+    "name": "my_shooting_game",
+    "short_name": "my_shooting_game",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

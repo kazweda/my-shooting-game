@@ -1,4 +1,4 @@
-# flutter_web_sandbox
+# my_shooting_game
 
 A new Flutter project.
 
